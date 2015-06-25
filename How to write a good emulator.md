@@ -1,4 +1,5 @@
 # How to write a good emulator
+> by [martinmine](https://twitter.com/martinmine) on [ragezone](https://forum.ragezone.com/f331/write-emulator-991142/)
 
 Writing a good emulator isn't a simple approach. Many people here on the forum (including myself) are self-learned. When you learn to code on your own there are many elements which you may miss out on unless you go to school and learn coding there. In this post I will discuss some important heuristics in order to have an emulator which is actually good. I do know Butterfly does not follow most of these, but the goal is to increase the level of quality in this section, as it is pretty poor at the moment and I do not work on any emulator any more. These heuristics does not only apply to Habbo emulators, but most software in general.
 
@@ -17,10 +18,10 @@ Writing a good emulator isn't a simple approach. Many people here on the forum (
 **Code formatting matters. A lot.**
 
  Each language has its own unwritten rules when it comes to formatting of both code and class, variable and function names. In C# we write all functions like AFunction(Foo parameter), while some other languages have aFunction(Foo parameter). Following these unwritten rules are important. Mixed up formatting styles looks horrible. But code formatting is not only limited to this. Where to put the statements and which one to group together is a large part. Sure, you can put ten statements at one line to save space in your code, but it is not readable at all. Prioritize a few extra newlines instead of having 100 lines of code in one function with no space between any of the statements. A general rules is to group together functions that belongs together. I personally prefer having a space before an if/while/for/do and at the end of the bracket. Some languages have unwritten rules (C# and Java differs here), and it is important to stick with the one that fits with the language and not be the annoying guy that wants to go against everything "just because he knows better". If there are no "rules", use what you like best, and it is then important to follow this style everywhere and not have ten different coding formatting in one project.
- **
-Poor documentation is the same as no documentation**
 
- If you are the good-guy coder and actually decide to comment your code, do it well. Don't write comments which barely makes sense to a new dev guy - write short, well-describing comments. It does take time to get good at commenting, but once you get it, you get it. Writing short meaningless comments have no purpose and are therefore a waste of space and time, [this](https://forum.ragezone.com/redirect-to/?redirect=http%3A%2F%2Fabstrusegoose.com%2Fstrips%2Fyou_down_wit_OPC-yeah_you_know_me.png) sums it up pretty well. And again, follow standards for the code, PHP (shruggle) has its own standard, and so does C# and Java. Many languages also provides you to generate documentation in e.g. HTML out from the comments in your code. Its pretty cool and useful. 
+**Poor documentation is the same as no documentation**
+
+ If you are the good-guy coder and actually decide to comment your code, do it well. Don't write comments which barely makes sense to a new dev guy - write short, well-describing comments. It does take time to get good at commenting, but once you get it, you get it. Writing short meaningless comments have no purpose and are therefore a waste of space and time, [this](http://abstrusegoose.com/strips/you_down_wit_OPC-yeah_you_know_me.png) sums it up pretty well. And again, follow standards for the code, PHP (shruggle) has its own standard, and so does C# and Java. Many languages also provides you to generate documentation in e.g. HTML out from the comments in your code. Its pretty cool and useful. 
 
 **Write simple code, not code that just "looks nice"**
 
@@ -44,7 +45,7 @@ Poor documentation is the same as no documentation**
 
 **Learn to use debuggers**
 
- If you are writing a C# application, learn how to use WinDBG, there are [some good tutorials](https://forum.ragezone.com/redirect-to/?redirect=https%3A%2F%2Fwww.google.no%2Fsearch%3Fq%3Dwindows%2Bdbg%2Bmanaged%26oq%3Dwindows%2Bdbg%2Bmanaged%26aqs%3Dchrome..69i57.3056j0j7%26sourceid%3Dchrome%26espv%3D210%26es_sm%3D93%26ie%3DUTF-8%23q%3DWinDBG%2Bmanaged%2Bsite%253Achannel9.msdn.com) on Channel9 on how to debug managed applications in it, but learn how to analyze memory dumps. This lets you analyze the memory dumps from high CPU peaks or when your application ran out of memory and you are clueless on what happened. 
+ If you are writing a C# application, learn how to use WinDBG, there are [some good tutorials](https://www.google.no/search?q=windows+dbg+managed&oq=windows+dbg+managed&aqs=chrome..69i57.3056j0j7&sourceid=chrome&espv=210&es_sm=93&ie=UTF-8#q=WinDBG+managed+site%3Achannel9.msdn.com) on Channel9 on how to debug managed applications in it, but learn how to analyze memory dumps. This lets you analyze the memory dumps from high CPU peaks or when your application ran out of memory and you are clueless on what happened. 
 
 **Learn to use an IDE that does not get in your way**
 
