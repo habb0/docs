@@ -1,5 +1,7 @@
 ## The habbo protocol consists of messages.
+
 > by [Nillus](https://forum.ragezone.com/members/315061.html) on [ragezone](https://forum.ragezone.com/f331/guide-coding-functions-habbo-emulators-477478/)
+
 ### Client > server messages
 
 These messages have a 'header', which is just their ID encoded in Base64, so 'B@' (pet stats btw) isn't just some random thing, no, decode it with a Habbo base64 encoder & you'll see that it's the message 128\. Encode it & it will become 'B@' again.  
