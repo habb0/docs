@@ -1,6 +1,8 @@
-## The habbo protocol consists of messages.
+## The need to know functions of Habbo emulators
 
 > by [Nillus](https://forum.ragezone.com/members/315061.html) on [ragezone](https://forum.ragezone.com/f331/guide-coding-functions-habbo-emulators-477478/)
+
+The habbo protocol consists of messages.
 
 ### Client > server messages
 
